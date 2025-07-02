@@ -1,17 +1,3 @@
 <% contacts.forEach(function(contact) { %>
-  <div class="contact-item">
-    <div class="contact-info">
-      <div class="contact-name"><%= contact.name %></div>
-      <p>Email : <%= contact.email %></p>
-      <p>Tél : <%= contact.phone %></p>
-    </div>
-    <div class="contact-actions">
-      <form
-        hx-delete="/contacts/<%= contact.id %>"
-        hx-target="#contacts-list"
-      >
-        <button class="btn-danger" type="submit">Supprimer</button>
-      </form>
-    </div>
-  </div>
+  <%- include('contact', { contact: contact }) %>
 <% }) %>
