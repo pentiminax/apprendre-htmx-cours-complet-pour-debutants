@@ -13,14 +13,17 @@
   <div class="container">
     <h1>Gestionnaire de contacts</h1>
 
-    <form hx-post="/contacts" hx-target="#contacts-list" hx-swap="innerHTML">
+    <form hx-post="/contacts" hx-target="#contacts-list">
       <input type="text" name="name" placeholder="Nom complet" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="tel" name="phone" placeholder="Téléphone" required>
       <button type="submit" class="btn">Ajouter</button>
     </form>
 
-    <button class="btn" hx-get="/contacts" hx-target="#contacts-list" hx-swap="innerHTML">
+    <button class="btn" 
+            hx-get="/contacts" 
+            hx-target="#contacts-list"
+    >
       Charger les contacts
     </button>
 
