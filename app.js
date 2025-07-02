@@ -1,5 +1,5 @@
 import express from 'express';
-import path from 'path';
+import path, { parse } from 'path';
 import { fileURLToPath } from 'url';
 import data from './data/data.js'; // Données mockées (liste de contacts)
 
@@ -17,9 +17,35 @@ app.set('view engine', 'ejs');
 // Rendre accessible le dossier "public" pour les fichiers statiques (CSS, JS, images, etc.)
 app.use(express.static('public'));
 
+// Middleware pour parser les données du corps des requêtes POST
+app.use(express.urlencoded({ extended: true }));
+
+let contacts = [...data]; // Initialiser les contacts avec les données mockées
+
 // Route principale : affiche la page d'accueil
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/contacts', (req, res) => {
+  res.render('list', { contacts });
+});
+
+app.post('/contacts', (req, res) => {
+  const { name, email, phone } = req.body;
+  const id = Math.random().toString();
+
+  contacts.push({ id, name, email, phone });
+
+  res.render('list', { contacts });
+});
+
+app.delete('/contacts/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+
+  contacts = contacts.filter(contact => contact.id !== id);
+
+  res.render('list', { contacts });
 });
 
 // Lancement du serveur sur le port 3000
