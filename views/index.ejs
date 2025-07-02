@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMX - Lesson 1</title>
+  <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Gestionnaire de contacts</h1>
+
+    <button class="btn" hx-get="/contacts" hx-target="#contacts-list" hx-swap="innerHTML">
+      Charger les contacts
+    </button>
+
+    <div id="contacts-list">
+      <!-- La liste des contacts apparaîtra ici -->
+    </div>
+  </div>
+</body>
+
+</html>
