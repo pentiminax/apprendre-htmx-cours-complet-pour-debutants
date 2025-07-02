@@ -37,7 +37,14 @@ app.post('/contacts', (req, res) => {
 
   contacts.push({ id, name, email, phone });
 
-  res.render('list', { contacts });
+  res.redirect(`/contacts/${id}`);
+});
+
+app.get('/contacts/:id', (req, res) => {
+  const id = req.params.id;
+  const contact = contacts.find(c => c.id === id);
+
+  res.render('contact', { contact });
 });
 
 app.delete('/contacts/:id', (req, res) => {

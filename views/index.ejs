@@ -13,7 +13,7 @@
   <div class="container">
     <h1>Gestionnaire de contacts</h1>
 
-    <form hx-post="/contacts" hx-target="#contacts-list">
+    <form hx-post="/contacts" hx-target="#contacts-list" hx-swap="befoereend">
       <input type="text" name="name" placeholder="Nom complet" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="tel" name="phone" placeholder="Téléphone" required>
