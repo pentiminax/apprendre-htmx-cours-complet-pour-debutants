@@ -48,6 +48,14 @@ app.delete('/contacts/:id', (req, res) => {
   res.render('list', { contacts });
 });
 
+app.post('/search', (req, res) => {
+  const term = req.body.term?.toLowerCase() || '';
+
+  const filteredContacts = contacts.filter(c => c.name.toLowerCase().includes(term));
+
+  res.render('list', { contacts: filteredContacts });
+});
+
 // Lancement du serveur sur le port 3000
 app.listen(3000, () => {
   console.log(`Example app listening on port 3000`);

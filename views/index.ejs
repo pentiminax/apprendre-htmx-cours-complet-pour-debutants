@@ -13,20 +13,26 @@
   <div class="container">
     <h1>Gestionnaire de contacts</h1>
 
-    <form hx-post="/contacts" hx-target="#contacts-list" hx-swap="innerHTML">
+    <form hx-post="/contacts" hx-target="#contacts-list">
       <input type="text" name="name" placeholder="Nom complet" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="tel" name="phone" placeholder="Téléphone" required>
       <button type="submit" class="btn">Ajouter</button>
     </form>
 
-    <button class="btn" hx-get="/contacts" hx-target="#contacts-list" hx-swap="innerHTML">
-      Charger les contacts
-    </button>
+    <form class="search-form"
+          hx-post="/search" 
+          hx-target="#contacts-list" 
+          hx-trigger="keyup changed delay:300ms" 
+          hx-indicator="#loading"
+      >
+      <input type="text" name="term" placeholder="Rechercher..." class="search-input">
 
-    <div id="contacts-list">
-      <!-- La liste des contacts apparaîtra ici -->
-    </div>
+    </form>
+
+    <div id="loading" class="htmx-indicator">Chargement...</div>
+
+    <div id="contacts-list" hx-get="/contacts" hx-trigger="load"></div>
   </div>
 </body>
 
