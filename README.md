@@ -1,1 +1,1 @@
-# apprendre-htmx-cours-complet-pour-les-debutants
+# Apprendre HTMX : Cours complet pour débutants
