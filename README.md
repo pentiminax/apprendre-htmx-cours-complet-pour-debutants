@@ -5,7 +5,7 @@ Ce dépôt contient tous les fichiers du cours **"Apprendre HTMX : Cours complet
 ## 🔍 À propos du cours
 
 Durant 5 épisodes, nous allons construire une petite application de gestion de contacts en utilisant uniquement **HTMX** pour dynamiser notre interface, sans utiliser de framework JavaScript complexe.  
-Tu y découvriras toutes les fonctionnalités essentielles de HTMX : requêtes dynamiques, swap, trigger, modales, formulaires AJAX, etc.
+Tu y découvriras toutes les fonctionnalités essentielles de HTMX : requêtes dynamiques, swap, trigger, formulaires AJAX, etc.
 
 ---
 
