@@ -1,4 +1,4 @@
-# Apprendre HTMX : Cours complet pour débutants
+# Apprendre HTMX - Cours complet pour débutants
 
 Ce dépôt contient tous les fichiers du cours **"Apprendre HTMX : Cours complet pour débutants"** disponible sur ma chaîne YouTube.
 
