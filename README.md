@@ -13,11 +13,11 @@ Tu y découvriras toutes les fonctionnalités essentielles de HTMX : requêtes d
 
 Chaque leçon est disponible dans un dossier dédié nommé `lesson-x`, où `x` est le numéro de l’épisode :
 
-- `lesson-1` : Mise en place et première requête HTMX
-- `lesson-2` : Ajout de nouveaux contacts avec HTMX
-- `lesson-3` : Modification d’un contact existant
-- `lesson-4` : Suppression + gestion des réponses serveur
-- `lesson-5` : Pagination, recherche et interactions avancées
+- `episode-1` : Introduction à HTMX
+- `episode-2` : Les requêtes dynamiques
+- `episode-3` : Travailler avec les événements, les triggers et les indicateurs
+- `episode-4` : Suppression + gestion des réponses serveur
+- `episode-5` : Pagination, recherche et interactions avancées
 
 Tu peux télécharger les fichiers de la leçon de ton choix en cliquant sur le bouton **Code > Download ZIP**, ou cloner le dépôt.
 
