@@ -22,7 +22,13 @@
 
     </form>
 
-    <div id="contacts-list" hx-get="/contacts" hx-trigger="load"></div>
+    <button class="btn" hx-get="/contacts" hx-target="#contacts-list">
+      Charger les contacts
+    </button>
+
+    <div id="contacts-list">
+      <!-- La liste des contacts apparaîtra ici -->
+    </div>
   </div>
 </body>
 
