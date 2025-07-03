@@ -25,7 +25,7 @@ Tu peux télécharger les fichiers de la leçon de ton choix en cliquant sur le 
 
 ## ▶️ Regarder le cours
 
-📺 [Lien vers la playlist YouTube (à venir)](#)
+📺 [Lien vers la playlist YouTube]([#](https://www.youtube.com/playlist?list=PLkHw7J3J2iar80NS9Gjklfwhee_wjOQEf))
 
 ---
 
