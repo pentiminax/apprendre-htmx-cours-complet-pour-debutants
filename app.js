@@ -64,14 +64,6 @@ app.put('/contacts/:id', (req, res) => {
   res.render('list', { contacts });
 });
 
-app.post('/search', (req, res) => {
-  const term = req.body.term?.toLowerCase() || '';
-
-  const filteredContacts = contacts.filter(c => c.name.toLowerCase().includes(term));
-
-  res.render('list', { contacts: filteredContacts });
-});
-
 app.delete('/contacts/:id', (req, res) => {
   const id = parseInt(req.params.id);
 

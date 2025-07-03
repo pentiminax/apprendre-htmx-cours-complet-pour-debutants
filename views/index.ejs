@@ -20,17 +20,6 @@
       <button type="submit" class="btn">Ajouter</button>
     </form>
 
-    <form class="search-form"
-          hx-post="/search" 
-          hx-target="#contacts-list" 
-          hx-trigger="keyup changed delay:300ms" 
-          hx-indicator="#loading"
-      >
-      <input type="text" name="term" placeholder="Rechercher..." class="search-input">
-
-    </form>
-
-    <div id="loading" class="htmx-indicator">Chargement...</div>
 
     <div id="contacts-list" hx-get="/contacts" hx-trigger="load"></div>
   </div>
