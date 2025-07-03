@@ -47,10 +47,19 @@ app.get('/contacts/:id', (req, res) => {
   res.render('contact', { contact });
 });
 
-app.delete('/contacts/:id', (req, res) => {
+app.get('/contacts/:id/edit', (req, res) => {
   const id = parseInt(req.params.id);
+  const contact = contacts.find(c => c.id === id);
 
-  contacts = contacts.filter(contact => contact.id !== id);
+  res.render('edit-form', { contact });
+});
+
+app.put('/contacts/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const { name, email, phone } = req.body;
+  const index = contacts.findIndex(c => c.id === id);
+
+  contacts[index] = { id, name, email, phone };
 
   res.render('list', { contacts });
 });

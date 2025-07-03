@@ -1,0 +1,6 @@
+<form hx-put="/contacts/<%= contact.id %>" hx-target="#contacts-list" hx-swap="innerHTML">
+    <input type="text" name="name" value="<%= contact.name %>" required>
+    <input type="email" name="email" value="<%= contact.email %>" required>
+    <input type="tel" name="phone" value="<%= contact.phone %>" required>
+    <button type="submit" class="btn">Mettre à jour</button>
+</form>
