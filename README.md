@@ -11,7 +11,7 @@ Tu y découvriras toutes les fonctionnalités essentielles de HTMX : requêtes d
 
 ## 📁 Comment accéder aux fichiers
 
-Chaque leçon est disponible dans un dossier dédié nommé `lesson-x`, où `x` est le numéro de l’épisode :
+Chaque leçon est disponible dans un dossier dédié nommé `episode-x`, où `x` est le numéro de l’épisode :
 
 - `episode-1` : Introduction à HTMX (hx-get)
 - `episode-2` : Requête POST (hx-post, hx-swap, hx-target)
