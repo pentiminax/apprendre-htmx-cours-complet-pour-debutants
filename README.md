@@ -40,4 +40,4 @@ Tu peux télécharger les fichiers de la leçon de ton choix en cliquant sur le 
 
 ```bash
 npm install
-npm run dev
+nodemon
