@@ -14,7 +14,7 @@ Tu y découvriras toutes les fonctionnalités essentielles de HTMX : requêtes d
 Chaque leçon est disponible dans un dossier dédié nommé `lesson-x`, où `x` est le numéro de l’épisode :
 
 - `episode-1` : Introduction à HTMX
-- `episode-2` : Les requêtes dynamiques
+- `episode-2` : Les requêtes dynamiques (GET, POST, DELETE)
 - `episode-3` : Travailler avec les événements, les triggers et les indicateurs
 - `episode-4` : Suppression + gestion des réponses serveur
 - `episode-5` : Pagination, recherche et interactions avancées
