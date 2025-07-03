@@ -20,8 +20,13 @@
       <button type="submit" class="btn">Ajouter</button>
     </form>
 
+    <button class="btn" hx-get="/contacts" hx-target="#contacts-list">
+      Charger les contacts
+    </button>
 
-    <div id="contacts-list" hx-get="/contacts" hx-trigger="load"></div>
+    <div id="contacts-list">
+      <!-- La liste des contacts apparaîtra ici -->
+    </div>
   </div>
 </body>
 
