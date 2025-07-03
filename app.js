@@ -28,7 +28,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contacts', (req, res) => {
-  res.render('list', { contacts });
+  setTimeout(() => {
+    res.render('list', { contacts });
+  }, 1000);
 });
 
 app.post('/contacts', (req, res) => {
@@ -69,7 +71,9 @@ app.post('/search', (req, res) => {
 
   const filteredContacts = contacts.filter(c => c.name.toLowerCase().includes(term));
 
-  res.render('list', { contacts: filteredContacts });
+  setTimeout(() => {
+    res.render('list', { contacts: filteredContacts });
+  }, 1000);
 });
 
 app.delete('/contacts/:id', (req, res) => {
