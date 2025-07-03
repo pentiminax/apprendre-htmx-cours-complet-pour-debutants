@@ -12,5 +12,11 @@
         <button hx-get="/contacts/<%= contact.id %>/edit" hx-target="#contacts-list" class="btn">
             Modifier
         </button>
+        
+        <form hx-delete="/contacts/<%= contact.id %>" 
+              hx-target="#contacts-list"
+            >
+            <button type="submit" class="btn-danger">Supprimer</button>
+        </form>
     </div>
 </div>

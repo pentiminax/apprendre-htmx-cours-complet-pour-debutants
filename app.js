@@ -72,6 +72,14 @@ app.post('/search', (req, res) => {
   res.render('list', { contacts: filteredContacts });
 });
 
+app.delete('/contacts/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+
+  contacts = contacts.filter(contact => contact.id !== id);
+
+  res.render('list', { contacts });
+});
+
 // Lancement du serveur sur le port 3000
 app.listen(3000, () => {
   console.log(`Example app listening on port 3000`);
